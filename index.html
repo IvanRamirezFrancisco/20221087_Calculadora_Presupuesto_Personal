@@ -9,19 +9,21 @@
 <body>
   <div class="container">
     <h1>Calculadora de Presupuesto</h1>
+    
     <form id="transaction-form">
-      <input type="text" id="description" placeholder="Descripción" required />
+      <input type="text" id="description" placeholder="Descripción (solo letras)" required />
       <input type="number" id="amount" placeholder="Monto" required />
+      
       <div class="buttons">
-        <button type="button" id="add-income">Agregar Ingreso</button>
-        <button type="button" id="add-expense">Agregar Gasto</button>
+        <button type="button" id="add-income" class="btn-income">Agregar Ingreso</button>
+        <button type="button" id="add-expense" class="btn-expense">Agregar Gasto</button>
       </div>
+      
+      <p id="error-message" class="error-message"></p>
     </form>
-
-    <p id="message" class="message"></p>  <!-- Mensaje de error o éxito -->
-
+    
     <h3>Historial de Transacciones</h3>
-    <table>
+    <table id="transaction-table">
       <thead>
         <tr>
           <th>Monto</th>
@@ -29,13 +31,14 @@
           <th>Tipo</th>
         </tr>
       </thead>
-      <tbody id="transaction-table-body"></tbody>
+      <tbody id="transaction-list"></tbody>
     </table>
 
     <div class="balance">
-      <h2>Balance Total: <span id="balance">$0</span></h2>
+      <h2>Balance Total: <span id="balance">$0.00</span></h2>
     </div>
   </div>
+  
   <script src="src/index.js"></script>
 </body>
 </html>

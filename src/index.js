@@ -6,7 +6,7 @@ const descriptionInput = document.getElementById("description");
 const amountInput = document.getElementById("amount");
 const addIncomeButton = document.getElementById("add-income");
 const addExpenseButton = document.getElementById("add-expense");
-const messageElement = document.getElementById("message"); // Nuevo mensaje de alerta
+const messageElement = document.getElementById("message"); //  mensaje de alerta
 function agregarTransaccion(tipo) {
     const descripcion = descriptionInput.value.trim();
     const monto = parseFloat(amountInput.value);
@@ -18,7 +18,7 @@ function agregarTransaccion(tipo) {
         mostrarMensaje("El monto debe ser un número positivo.", "error");
         return;
     }
-    // Validar que el balance no sea negativo si es un gasto
+    // Validar que no sea negativo 
     if (tipo === "gasto") {
         const nuevoBalance = calcularBalance() - monto;
         if (nuevoBalance < 0) {

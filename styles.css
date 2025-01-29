@@ -1,4 +1,5 @@
-/* Estilos generales */
+
+
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #74ebd5, #acb6e5);
@@ -10,7 +11,7 @@ body {
   height: 100vh;
 }
 
-/* Contenedor principal */
+
 .container {
   background: white;
   padding: 30px;
@@ -27,7 +28,7 @@ h1 {
   font-size: 24px;
 }
 
-/* Estilos de inputs */
+
 input {
   width: 100%;
   padding: 12px;
@@ -43,7 +44,7 @@ input:focus {
   outline: none;
 }
 
-/* Botones */
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -62,7 +63,7 @@ button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Botón de ingreso */
+
 .btn-income {
   background: linear-gradient(135deg, #28a745, #218838);
   color: white;
@@ -73,7 +74,7 @@ button {
   transform: scale(1.05);
 }
 
-/* Botón de gasto */
+
 .btn-expense {
   background: linear-gradient(135deg, #dc3545, #c82333);
   color: white;
@@ -84,7 +85,6 @@ button {
   transform: scale(1.05);
 }
 
-/* Mensaje de error */
 .error-message {
   color: red;
   font-size: 14px;
@@ -93,7 +93,6 @@ button {
   font-weight: bold;
 }
 
-/* Balance */
 .balance {
   margin-top: 20px;
   font-size: 22px;
@@ -105,7 +104,6 @@ button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Tabla de historial */
 table {
   width: 100%;
   margin-top: 15px;
@@ -126,7 +124,7 @@ th {
   font-weight: bold;
 }
 
-/* Colores en la tabla */
+
 .income {
   color: #28a745;
   font-weight: bold;
