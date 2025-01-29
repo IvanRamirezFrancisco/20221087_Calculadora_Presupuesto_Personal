@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Presupuesto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Presupuesto</h1>
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Descripción" required />
+      <input type="number" id="amount" placeholder="Monto" required />
+      <div class="buttons">
+        <button type="button" id="add-income">Agregar Ingreso</button>
+        <button type="button" id="add-expense">Agregar Gasto</button>
+      </div>
+    </form>
+
+    <p id="message" class="message"></p>  <!-- Mensaje de error o éxito -->
+
+    <h3>Historial de Transacciones</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Monto</th>
+          <th>Descripción</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody id="transaction-table-body"></tbody>
+    </table>
+
+    <div class="balance">
+      <h2>Balance Total: <span id="balance">$0</span></h2>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>
